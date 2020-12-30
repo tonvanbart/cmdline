@@ -9,7 +9,7 @@ import picocli.CommandLine.Option;
 @Command
 public class ListCommand  implements Runnable {
 
-    @Option(names = {"-f", "--file"}, required = true)
+    @Option(names = {"-f", "--file"}, required = true, description = "The file we want to put in")
     private String filename;
 
     @Override
